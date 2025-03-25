@@ -1,5 +1,16 @@
 #PS: wap to count the occurrences of words in given string
 
+#Solution no.1
+str_1 = input("Enter String==>")
+pos = 0
+for i in str_1.split():
+    if i in str_1 and i not in str_1.split()[pos+1:]:
+        print("Count of ", i, "is:", str_1.split().count(i))
+    pos += 1
+    
+
+# Solution no.2
+
 list_1 = list(input("Enter String==>").split())
 list_2 = list_1.copy()
 count_1 = 0
