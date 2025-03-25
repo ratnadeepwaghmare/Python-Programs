@@ -1,5 +1,17 @@
 #PS: wap to count the occurrences of characters in given string
 
+#Solution no. 1
+str_1 = input("Enter String==>")
+pos = 0
+for i in str_1:
+    if i!=" ":
+        if i in str_1 and i not in str_1[pos+1:]:
+            print("Count of ", i, "is:", str_1.count(i))
+    pos += 1
+
+
+# Solution no.2
+
 list_1 = list(input("Enter String==>"))
 list_2 = list_1.copy()
 count_1 = 0
